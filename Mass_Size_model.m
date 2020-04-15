@@ -20,7 +20,7 @@ set(fig_dum,'units','inches','position',[0.3,0.3,8.8,8.8]);
 set(fig_dum,'paperpositionmode','auto');
     
 %% read variables; change units %%%
-for kk=1:4
+for kk=1:size(fnames)
 
     id = fopen(fnames(kk).name);
     data = textscan(id,'%f %f %f %f');    
